@@ -1,4 +1,4 @@
-package lk.ijse.EMoji;
+package lk.ijse.Emoji;
 
 import com.vdurmont.emoji.EmojiParser;
 import javafx.collections.FXCollections;
