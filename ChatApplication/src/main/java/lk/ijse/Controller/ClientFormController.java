@@ -24,7 +24,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
-import lk.ijse.Emoji.EmojiBar;
+import lk.ijse.EMoji.EmojiBar;
 import lk.ijse.Sinhala.SinhalaTyping;
 
 import java.awt.*;
