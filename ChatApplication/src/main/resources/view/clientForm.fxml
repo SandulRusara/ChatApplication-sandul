@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" onMouseDragged="#anchorPaneDraggedOnAction" onMousePressed="#anchorPanePressedOnAction" prefHeight="704.0" prefWidth="682.0" style="-fx-background-color: #00a36c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="623.0" fitWidth="682.0" layoutY="81.0">
+         <image>
+            <Image url="@../image/chatBackground.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollPane" layoutX="9.0" layoutY="87.0" prefHeight="553.0" prefWidth="664.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/scrollPane.css">
+         <content>
+            <VBox fx:id="vBox" prefHeight="62.0" prefWidth="661.0" />
+         </content>
+         <styleClass>
+            <String fx:value="scroll-pane" />
+            <String fx:value="decrement-arrow" />
+            <String fx:value="decrement-button" />
+            <String fx:value="increment-arrow" />
+            <String fx:value="scroll-bar" />
+            <String fx:value="thumb" />
+            <String fx:value="track" />
+         </styleClass>
+      </ScrollPane>
+      <TextField fx:id="txtMsg" layoutX="111.0" layoutY="650.0" prefHeight="44.0" prefWidth="463.0" promptText="   Typing....." style="-fx-background-radius: 20;" />
+      <Circle fill="#00a36c" layoutX="651.0" layoutY="672.0" radius="22.0" stroke="#904aae" strokeType="INSIDE" />
+      <ImageView layoutX="638.0" layoutY="657.0">
+         <image>
+            <Image url="@../image/sendIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="652.0" onAction="#sendMsgOnAction" prefHeight="40.0" prefWidth="44.0" style="-fx-background-radius: 30;" text="." textFill="WHITE" />
+      <Label fx:id="lblUsername" layoutX="90.0" layoutY="28.0" prefHeight="25.0" prefWidth="266.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="9.0" layoutY="4.0">
+         <image>
+            <Image url="@../image/userIcon.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#00a36c" layoutX="602.0" layoutY="672.0" radius="22.0" stroke="#904aae" strokeType="INSIDE" />
+      <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="586.0" layoutY="660.0">
+         <image>
+            <Image url="@../image/IconCamera.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="580.0" layoutY="651.0" onAction="#sendImageOnAction" prefHeight="42.0" prefWidth="44.0" style="-fx-background-radius: 30;" text="." textFill="WHITE" />
+      <Circle fill="#00a36c" layoutX="31.0" layoutY="672.0" radius="22.0" stroke="#904aae" strokeType="INSIDE" />
+      <ImageView fitHeight="56.0" fitWidth="52.0" layoutX="5.0" layoutY="646.0">
+         <image>
+            <Image url="@../image/emojiIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="emojiBtn" buttonType="RAISED" layoutX="9.0" layoutY="651.0" prefHeight="42.0" prefWidth="44.0" style="-fx-background-radius: 30;" text="." textFill="WHITE" />
+      <Group layoutX="332.0" layoutY="21.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutX="316.0" layoutY="-6.0" stroke="WHITE" strokeType="INSIDE" width="23.0" />
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="312.0" layoutY="-13.0">
+               <image>
+                  <Image url="@../image/closeIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Circle layoutX="582.0" layoutY="23.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="-86.5" layoutX="675.0" layoutY="24.0" startX="-100.0" stroke="WHITE" strokeWidth="3.0" />
+      <JFXButton fx:id="btnMinimize" layoutX="568.0" layoutY="9.0" onAction="#minimizeOnAction" prefHeight="28.0" prefWidth="27.0" style="-fx-background-radius: 10;" text="." />
+      <JFXButton fx:id="btnClose" layoutX="643.0" layoutY="9.0" onAction="#closeOnAction" prefHeight="28.0" prefWidth="33.0" style="-fx-background-radius: 10;" text="." />
+      <Circle fill="#00a36c" layoutX="82.0" layoutY="673.0" radius="22.0" stroke="#904aae" strokeType="INSIDE" />
+      <Label layoutX="68.0" layoutY="659.0" text="සිං" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSinhala" layoutX="59.0" layoutY="650.0" prefHeight="45.0" prefWidth="45.0" text="." textFill="#ab3ba2" />
+      <Group layoutX="374.0" layoutY="21.0" />
+      <Circle layoutX="620.0" layoutY="23.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="14.0" layoutX="609.0" layoutY="19.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="18.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="14.0" layoutX="613.0" layoutY="14.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="18.0" />
+      <Circle fx:id="firstCircle" layoutX="620.0" layoutY="23.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="rectangleMin" arcHeight="5.0" arcWidth="5.0" height="14.0" layoutX="611.0" layoutY="16.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="18.0" />
+      <JFXButton fx:id="btnRestore" layoutX="607.0" layoutY="9.0" onAction="#restoreOnAction" opacity="0.24" prefHeight="28.0" prefWidth="27.0" style="-fx-background-radius: 10;" text="." />
+      <JFXButton fx:id="btnMaxRestore" layoutX="607.0" layoutY="8.0" onAction="#maxRestoreOnAction" prefHeight="28.0" prefWidth="27.0" style="-fx-background-radius: 10;" text="." />
+   </children>
+</AnchorPane>
